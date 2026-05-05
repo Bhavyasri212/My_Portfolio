@@ -509,19 +509,31 @@
     /* Responsive */
     @media (max-width: 900px) {
       .nav-container { padding: 0 20px; }
-      .nav-links { display: none; } /* On mobile, nav links hidden for space, or implement hamburger */
+      .nav-links { display: none; }
       
       .hero {
         flex-direction: column-reverse;
         text-align: center;
-        padding: 140px 20px 60px;
+        padding: 120px 20px 40px;
+        gap: 40px;
       }
-      .hero-image { max-width: 250px; }
-      .hero h1 { font-size: 2.5rem; }
-      .hero-bio { margin: 0 auto 30px; }
+      .hero-image { max-width: 220px; }
+      .hero h1 { font-size: 2.2rem; margin-bottom: 15px; }
+      .hero-bio { font-size: 0.95rem; margin: 0 auto 30px; }
       
-      .projects-grid { grid-template-columns: 1fr; }
-      .bottom-section { grid-template-columns: 1fr; }
+      section { padding: 60px 0; }
+      .section-title { font-size: 2rem; margin-bottom: 40px; }
+      
+      .skills-grid { flex-direction: column; gap: 15px; }
+      .skill-card { flex: 1 1 100%; width: 100%; padding: 25px 20px; }
+
+      .content-block { padding: 30px 20px; margin-bottom: 25px; }
+      .content-block h3 { font-size: 1.8rem !important; }
+      
+      .projects-grid { grid-template-columns: 1fr; gap: 20px; }
+      .bottom-section { grid-template-columns: 1fr; gap: 40px; padding-top: 40px; }
+      
+      .contact-btn { width: 100%; justify-content: center; }
     }
   </style>
 </head>
